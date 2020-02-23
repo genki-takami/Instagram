@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="408" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="408"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="408"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeH-3X-dNX">
+                        <rect key="frame" x="20" y="10" width="280" height="280"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SeH-3X-dNX" secondAttribute="height" multiplier="1:1" id="h1w-YP-PHB"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6da-b4-dUG">
+                        <rect key="frame" x="26" y="300" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="WCz-pZ-th5"/>
+                            <constraint firstAttribute="height" constant="40" id="lD8-Kb-0wl"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="like_none"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNX-iW-VGL">
+                        <rect key="frame" x="76" y="309.5" width="40" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="pEm-cM-idf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xaz-pv-ghD">
+                        <rect key="frame" x="126" y="309.5" width="168" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-LV-cFG">
+                        <rect key="frame" x="26" y="350" width="268" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oeM-LV-cFG" firstAttribute="top" secondItem="6da-b4-dUG" secondAttribute="bottom" constant="10" id="3mm-1H-vU9"/>
+                    <constraint firstItem="zNX-iW-VGL" firstAttribute="centerY" secondItem="6da-b4-dUG" secondAttribute="centerY" id="48R-kt-fFJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oeM-LV-cFG" secondAttribute="trailing" constant="10" id="4ub-ZE-aCL"/>
+                    <constraint firstAttribute="trailing" secondItem="SeH-3X-dNX" secondAttribute="trailing" constant="20" symbolic="YES" id="Bbv-Yb-rzd"/>
+                    <constraint firstItem="SeH-3X-dNX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CW1-WN-Seq"/>
+                    <constraint firstItem="6da-b4-dUG" firstAttribute="top" secondItem="SeH-3X-dNX" secondAttribute="bottom" constant="10" id="E5a-VG-Ltx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oeM-LV-cFG" secondAttribute="bottom" constant="10" id="Exv-d4-Lwf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Xaz-pv-ghD" secondAttribute="trailing" constant="10" id="FjK-zJ-hf9"/>
+                    <constraint firstItem="SeH-3X-dNX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="WRk-ae-vfJ"/>
+                    <constraint firstItem="6da-b4-dUG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="XFw-B0-DyJ"/>
+                    <constraint firstItem="oeM-LV-cFG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="cba-1Q-xzE"/>
+                    <constraint firstItem="zNX-iW-VGL" firstAttribute="leading" secondItem="6da-b4-dUG" secondAttribute="trailing" constant="10" id="f1Q-7H-95a"/>
+                    <constraint firstItem="Xaz-pv-ghD" firstAttribute="leading" secondItem="zNX-iW-VGL" secondAttribute="trailing" constant="10" id="lnK-Ex-wIF"/>
+                    <constraint firstItem="Xaz-pv-ghD" firstAttribute="centerY" secondItem="6da-b4-dUG" secondAttribute="centerY" id="qUK-x5-c9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PostImageView" destination="SeH-3X-dNX" id="jqg-KE-hMn"/>
+                <outlet property="captionLabel" destination="oeM-LV-cFG" id="lJG-Y7-gi7"/>
+                <outlet property="dateLabel" destination="Xaz-pv-ghD" id="0nw-iN-ek9"/>
+                <outlet property="likeButton" destination="6da-b4-dUG" id="xgH-sr-2dN"/>
+                <outlet property="likeLabel" destination="zNX-iW-VGL" id="9RO-Sf-bDx"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="162.05357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like_none" width="40" height="40"/>
+    </resources>
+</document>
