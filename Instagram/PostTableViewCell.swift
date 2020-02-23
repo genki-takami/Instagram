@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseUI
 
 class PostTableViewCell: UITableViewCell {
 
